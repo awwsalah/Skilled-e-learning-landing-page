@@ -16,21 +16,25 @@
 
 body{
     font-family: "Plus Jakarta Sans", sans-serif;
-    background-image: url(assets/image-hero-desktop.png);
     width: 100%;
     height: auto;
-    background-position-y: 170%;
-    background-position-x: 150%;
     background-size: 600px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 }
-
+.header-img {
+    background-position-y: -100px;
+    background-position-x: 300px;
+    background-size: 20px;
+    position:absolute;
+    z-index: 0;
+}
 .header{
     display: flex;
     justify-content: space-between;
     padding: 30px 80px;
+    z-index: 1;
 }
 
 .header-section{
@@ -40,6 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 1;
 }
 .header-section button{
     width: 167px;

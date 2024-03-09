@@ -9,12 +9,100 @@
     --title-color: #F74780;
     --shading-color: #666CA3;
     --text-color: #83869A;
-    --gradiant-color1: linear-gradient(#83869A,#F02AA6);
+    --gradient-color1: linear-gradient(#83869A,#F02AA6);
     --gradient-color2: linear-gradient(#F02AA6,#FF6F48);
+    --gradient-color3: linear-gradient(#FFFFFF,#F0F1FF);
 }
 
 body{
     font-family: "Plus Jakarta Sans", sans-serif;
-    background-image: lean;
+    background-image: url(assets/image-hero-desktop.png);
+    width: 100%;
+    height: auto;
+    background-position-y: 170%;
+    background-position-x: 150%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+
+.header-section{
+    padding: 30px 80px;
+    width: 456px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-section button{
+    width: 167px;
+    height: 63px;
+    background-image: var(--gradient-color2);
+    border-radius: 40px;
+    border: none;
+}
+
+.cards{
+    display: grid;
+    gap: 20px;
+    padding: 30px 80px;
+}
+.card1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: var(--gradient-color2);
+
+}
+.card2{
+    background-image: url(assets/icon-animation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.card3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.card4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.card5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.card6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.logo-dark img{
+    width: 111px;
+}
+.btn-no-border{
+    color: var(--title-color);
+    border: none;
+    background-color: white;
+    font-weight: 700;
 }
